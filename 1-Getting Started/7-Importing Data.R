@@ -12,13 +12,13 @@ browseURL("http://cran.r-project.org/doc/manuals/R-data.html#Reading-Excel-sprea
 # This command gives an error on missing data
 # but works on complete data
 # "header = TRUE" means the first line is a header
-trends.txt <- read.table("~/Desktop/R/GoogleTrends.txt", header = TRUE)
+trends.txt <- read.table("~/Google Drive/repos/r/R-Statistics-Essential-Training/R-Statistics-Essential-Training/1-Getting Started/7-GoogleTrends.txt", header = TRUE)
 ?read.table
 
 # This works with missing data by specifying the
 # separator: \t is for tabs, sep = "," for commas
 # R converts missing to "NA"
-trends.txt <- read.table("~/Desktop/R/GoogleTrends.txt", header = TRUE, sep = "\t")
+trends.txt <- read.table("~/Google Drive/repos/r/R-Statistics-Essential-Training/R-Statistics-Essential-Training/1-Getting Started/7-GoogleTrends.txt", header = TRUE, sep = "\t")
 str(trends.txt)  # This gives structure of object sntxt
 # Or click on file in Workspace viewer, which brings up this:
 View(trends.txt)
@@ -27,7 +27,7 @@ View(trends.txt)
 # CSV FILES
 # Don't have to specify delimiters for missing data
 # because CSV means "comma separated values"
-trends.csv <- read.csv("~/Desktop/R/GoogleTrends.csv", header = TRUE)
+trends.csv <- read.csv("~/Google Drive/repos/r/R-Statistics-Essential-Training/R-Statistics-Essential-Training/1-Getting Started/7-GoogleTrends.csv", header = TRUE)
 str(trends.csv)
 View(trends.csv)
 
